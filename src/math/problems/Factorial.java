@@ -22,7 +22,7 @@ public class Factorial {
     }
     static int Recursion (int a){
         int c;
-        if (a == 1){
+        if (a == 0){
             return 1;
         } else { c = a*Recursion(a-1);
             return c;
