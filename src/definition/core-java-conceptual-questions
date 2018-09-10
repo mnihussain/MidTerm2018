@@ -1,28 +1,53 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
+A. A programming language is a set of instructions which tell computers to execute specific tasks
 What jdk contains or composed of and define each components?
+A. Compiler, Debugger, Class files, JRE, JVM
 What is IDE?
+A. IDE stands for Integrated Development Environment and IDE is an application which accommodate tools for writing programing languages.
 What are the IDEs available in the market to support java?
+A. NetBeans, IntelliJ, Eclipse, Android Studio, BlueJ etc.
 Explain the entire java life cycle.
+A. Code / Text Editor ---> Source File ---> Compiler ---> Class File ---> JRE---> JVM + OS ---> Console
 what is class?
+A. A Class in java is the blueprint of objects
 What is object?
+A. An object in java is the instance of class
 What is the entry point of an application?
+A. The 'main' method
 Why main is static?
+A. to use main method without creating instance
 Which class is the superclass of all classes?
+A. Object Class is the superclass of all classes, it comes from java.lang.Object
 What is difference between path and classpath variables?
+A. path variables is used to set the path for javac.exe, java.exe, javadoc.exe and so on. classpath variables is to set the path for java classes.
 What is the difference between an Interface and Abstract class?
+A. Interface can have abstract and static method only and abstract class can have any kinds of methods besides abstract method
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A. No object can be created from an interface but once extended, object can be created from an abstract class. Multiple interface can implemented in a single class but only one abstract class can extend in a single class
 what is Access Specifier?
+A. Access Specifier can define what type of visibility access can have a class, method and variable. there are four access modifiers : public, private, protected, default
 What is OOP ? Define each feature of java OOP.
+A. Object Oriented Programming. there are four features in OOP.
+    Abstraction can use for implementation hiding
+    Encapsulation can use for data hiding
+    Polymorphism can use for method overloading
+    Inheritance can use for enabling new object to take on existing properties from superclass or base class
 What is Java Package and which package is imported by default?
+A. Java Package is a collection of classes and by default java.lang package is imported in a class
 What is API? Name list of API that you have used so far.
+A. Application Programming Interface are pre defined packages, classes, constructors and methods which comes along with API in java such as Scanner, Random, BufferReader, FileReader etc.
 Does java support multiple inheritance, explain why or why not?
+A. No cause inheritance only extend one base class in a concrete class
 What is method overloading and when it happens?
+A. Method overloading can only happens during polymorphism which allows to change the body of a method
 Explain exceptions in java and how to handle it.
+A. Exceptions can be handle in java such as Logical, Syntax errors etc by try catch block or throws keyword
 What is static keyword in java? How it has been used in variables and methods ?
+A.
 What is final and how it has been used variables and methods?
+A.
 What is final, finally and finalize?
 What is a constructor ?
 Can we have multiple constructors in a class?

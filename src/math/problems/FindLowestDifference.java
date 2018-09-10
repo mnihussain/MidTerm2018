@@ -18,8 +18,7 @@ public class FindLowestDifference {
 
         }
 
-        private static int difference(int a1[], int a2[],
-        int m, int n)
+        static int difference(int a1[], int a2[], int m, int n)
         {
             Arrays.sort(a1);
             Arrays.sort(a2);
