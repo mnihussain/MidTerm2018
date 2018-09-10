@@ -17,12 +17,12 @@ public class Factorial {
      a--;
         } while (a>0);
         System.out.println("Factorial by Iteration of 5! = " + b);//Iteration
-    int d= Recursion(5);
-        System.out.println("Factorial by Recursion of 5! = " + d);//Recursion
+
+        System.out.println("Factorial by Recursion of 5! = " + Recursion(5));//Recursion
     }
     static int Recursion (int a){
         int c;
-        if (a == 0){
+        if (a == 1){
             return 1;
         } else { c = a*Recursion(a-1);
             return c;
