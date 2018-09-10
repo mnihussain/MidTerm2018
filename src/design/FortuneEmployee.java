@@ -1,6 +1,6 @@
 package design;
 
-public class FortuneEmployee {
+public class FortuneEmployee extends EmployeeInfo{
 
 	/**
 	 * FortuneEmployee class has a main methods where you will be able to create Object from
