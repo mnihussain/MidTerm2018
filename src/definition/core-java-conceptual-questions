@@ -25,7 +25,7 @@ A. path variables is used to set the path for javac.exe, java.exe, javadoc.exe a
 What is the difference between an Interface and Abstract class?
 A. Interface can have abstract and static method only and abstract class can have any kinds of methods besides abstract method
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
-A. No object can be created from an interface but once extended, object can be created from an abstract class. Multiple interface can implemented in a single class but only one abstract class can extend in a single class
+A. No object can be created from an interface and abstract class. Multiple interface can implemented in a single class but only one abstract class can extends in a single class
 what is Access Specifier?
 A. Access Specifier can define what type of visibility access can have a class, method and variable. there are four access modifiers : public, private, protected, default
 What is OOP ? Define each feature of java OOP.
@@ -43,12 +43,13 @@ A. No cause inheritance only extend one base class in a concrete class
 What is method overloading and when it happens?
 A. Method overloading can only happens during polymorphism which allows to change the body of a method
 Explain exceptions in java and how to handle it.
-A. Exceptions can be handle in java such as Logical, Syntax errors etc by try catch block or throws keyword
+A. Exceptions can be handle in java such as Logical, Syntax, Sql problems etc by try catch block or throws keyword
 What is static keyword in java? How it has been used in variables and methods ?
-A.
+A. We use Static keyword for variables and methods to use them without creating instances or objects
 What is final and how it has been used variables and methods?
-A.
+A. final keyword in variables and methods is used for, not to override method and once assigned, a final variable cannot assigned
 What is final, finally and finalize?
+
 What is a constructor ?
 Can we have multiple constructors in a class?
 If we don't have a constructor declared, what is called during the object creation?
