@@ -49,22 +49,37 @@ A. We use Static keyword for variables and methods to use them without creating 
 What is final and how it has been used variables and methods?
 A. final keyword in variables and methods is used for, not to override method and once assigned, a final variable cannot assigned
 What is final, finally and finalize?
-
+A. final is a keyword. finally is used for code block and finalize to destroy objects
 What is a constructor ?
+A. A constructor has similar name as class and to create an object from a class we use constructor
 Can we have multiple constructors in a class?
+A. Yes we can have multiple constructors with different parameters
 If we don't have a constructor declared, what is called during the object creation?
+A. class name
 What is "this" keyword in java ?
+A. this keyword establish relation between the local variables with the instance variables
 What is "super" keyword in java? How many possible way can you use?
+A. once inherited we can use super keyword to get instances from superclass such as constructors and methods
 What is JVM stand for ?
+A. Java Virtual Machine
 Is JVM platform independent?
+A. Yes except Microsoft
 What version of java are you using?
+A. 1.8
 What is JAR stand for ?
+A. Java Archive
 What is the difference between JDK and JVM?
+A. JDK is used for writing and compiling codes and JVM to run java applications
 What is the difference between JVM and JRE?
+A. JVM is the virtual machine where java applications run and JRE provides the runtime environment to java application to run
 What is compile time and run time?
+A. compile time is the time when we write source code in the editor and run time happens in the JRE during the execution java application
 What is heap?
+A. heap is a memory allocation which is a part of RAM
 How java manage it's memory?
+A. Java stores it's object in heap and variables in stack
 What is the difference between String, StringBuffer and StringBuilder?
+A.
 What is Singleton class?
 What is Serialization and Deserialization?
 when to use transient variable in java?
