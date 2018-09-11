@@ -1,9 +1,11 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
+A. data structure in java is some particular way of sorting and organizing data in a computer to retrieve or update as per need
 What are the various operations that can be performed on different Data Structures?
+A. sort, swap, add, put , peek etc
 List out the areas in which data structures are applied extensively?
+A.
 what is an Array?
 what is the difference between the Array and ArrayList?
 what is LinkedList?

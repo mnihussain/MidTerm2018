@@ -68,9 +68,9 @@ public class EmployeeInfo extends AllDepartments implements Employee{
 	 * 
 	 */
 	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
-		int total=0;
+		int total = 0;
 
-		if (numberOfYearsWithCompany>36){
+		if (numberOfYearsWithCompany>36){ total = numberOfYearsWithCompany;
 			System.out.println("Your new salary with 10% raise is: ");return total ;
 		}
 		System.out.println("Please enter the duration months with us: "+numberOfYearsWithCompany);
