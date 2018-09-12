@@ -23,7 +23,7 @@ public class EmployeeInfo extends AllDepartments implements Employee{
 	final static String companyName = "CoderClub";
 	int employeeId;
 	String name;
-	int monthly;
+	static double monthly;
 	
 	/*
 	 * You must implement the logic for below 2 methods and 
@@ -47,12 +47,16 @@ public class EmployeeInfo extends AllDepartments implements Employee{
 		this.employeeId = employeeId;
 		System.out.println(name + " has ID no: " + employeeId);
 	}
+
 	public void monthlySalary(int a ){
 		System.out.println("Salary of this month is: "+a);
 	}
-	public void monthlySalary(int a , int b){
+
+	public void monthlySalary(int a , int b)
+	{
 		System.out.println("Salary of last two month is: "+(a+b));
 	}
+
 	public void monthlySalary(){
 		if (monthly>0){
 		System.out.println("Half Yearly Salary is: "+monthly*6);}
@@ -67,14 +71,13 @@ public class EmployeeInfo extends AllDepartments implements Employee{
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
-		int total = 0;
-
-		if (numberOfYearsWithCompany>36){ total = numberOfYearsWithCompany;
-			System.out.println("Your new salary with 10% raise is: ");return total ;
-		}
-		System.out.println("Please enter the duration months with us: "+numberOfYearsWithCompany);
-		return total;
+	public double calculateEmployeeBonus(int numberOfYearsWithCompany){
+		double total = monthly;
+		if (numberOfYearsWithCompany>=3 ){total = (int)monthly * 0.10;
+			System.out.println("Your new salary with 10% raise is: " + total);return (int) total;
+		} else if (numberOfYearsWithCompany>=2 ){ total = (int)monthly * 0.08;
+		System.out.println("Your increment for average performance with 8% rise is: " + total);}
+		return (int) total;
 	}
 	
 	/*
@@ -83,8 +86,8 @@ public class EmployeeInfo extends AllDepartments implements Employee{
 	 * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
 	 * 
 	 */
-	public static int calculateEmployeePension(){
-		int total=0;
+	public double calculateEmployeePension(){
+		int total = 0;
 		Scanner sc  = new Scanner(System.in);
 		System.out.println("Please enter start date in format (example: May,2015): ");
 		String joiningDate = sc.nextLine();
@@ -92,7 +95,15 @@ public class EmployeeInfo extends AllDepartments implements Employee{
 		String todaysDate = sc.nextLine();
         String convertedJoiningDate = DateConversion.convertDate(joiningDate);
         String convertedTodaysDate = DateConversion.convertDate(todaysDate);
-
+		if (convertedJoiningDate.endsWith("2015") && convertedTodaysDate.endsWith("2018"))
+		{total = ((int) (monthly * 0.15 * 12));
+			System.out.println("Your pension is: (excluding salary) "+total);}
+		else if (convertedJoiningDate.endsWith("2016") && convertedTodaysDate.endsWith("2018"))
+		{total = ((int) (monthly * 0.10 * 12));
+			System.out.println("Your pension is: (excluding salary) "+total);}
+		else if (convertedJoiningDate.endsWith("2017") && convertedTodaysDate.endsWith("2018"))
+		{total = ((int) (monthly * 0.05 * 12));
+			System.out.println("Your pension is: (excluding salary) "+total);}
         //implement numbers of year from above two dates
 		//Calculate pension
 
@@ -112,17 +123,26 @@ public class EmployeeInfo extends AllDepartments implements Employee{
 	@Override
 	public void assignDepartment() {
 		Scanner s = new Scanner(System.in);
-		String department = s.next();
-		System.out.println("This "+ name + " has been assign to " + department);
+		System.out.println("Please enter your department name: ");
+		String department = s.nextLine();
+		if (name==null){
+			System.out.println("Please enter your name here: ");
+			String nName = s.nextLine();
+			System.out.println(nName + " has been assign to " + department);
+			this.name = nName;
+		} else{
+		System.out.println(name + " has been assign to " + department);}
 
 	}
 
 	@Override
-	public int calculateSalary() {
+	public double calculateSalary() {
 		Scanner s = new Scanner(System.in);
-		int monthly = s.nextInt();
+		System.out.println("Please insert your monthly salary here");
+		double monthly = s.nextInt();
 		this.monthly = monthly;
-		System.out.println("Annual salary is: "+monthly*12);
+		System.out.println(name+ "'s Monthly salary is: "+monthly);
+		System.out.println(name+ "'s Annual salary is: "+monthly*12);
 		return monthly;
 	}
 
@@ -133,7 +153,7 @@ public class EmployeeInfo extends AllDepartments implements Employee{
 
 	@Override
 	public void allDepartment() {
-		System.out.println("The Four Departments of this organization are: " + "/n" +Dep1+"/n"+Dep2+"/n"+Dep3+"/n"+Dep4);
+		System.out.println("The Four Departments of this organization are: \n" +Dep1+"\n"+Dep2+"\n"+Dep3+"\n"+Dep4);
 	}
 
 	private static class DateConversion {

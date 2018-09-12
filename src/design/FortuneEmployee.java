@@ -14,7 +14,18 @@ public class FortuneEmployee extends EmployeeInfo{
 	 *
 	 **/
 	public static void main(String[] args) {
-		
+
+		EmployeeInfo Farzaad = new EmployeeInfo();
+
+		EmployeeInfo Fahim   = new EmployeeInfo(101);
+		Fahim.allDepartment();
+		Fahim.assignDepartment();
+		Fahim.calculateSalary();
+		Fahim.calculateEmployeeBonus(2);
+		Fahim.calculateEmployeePension();
+
+		EmployeeInfo Setu    = new EmployeeInfo("Setu",102);
+
 
 
 	}
