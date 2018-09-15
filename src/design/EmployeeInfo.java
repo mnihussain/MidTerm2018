@@ -104,9 +104,6 @@ public class EmployeeInfo extends AllDepartments implements Employee{
 		else if (convertedJoiningDate.endsWith("2017") && convertedTodaysDate.endsWith("2018"))
 		{total = ((int) (monthly * 0.05 * 12));
 			System.out.println("Your pension is: (excluding salary) "+total);}
-        //implement numbers of year from above two dates
-		//Calculate pension
-
 		return total;
 	}
 
