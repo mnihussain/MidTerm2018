@@ -11,14 +11,14 @@ public class FindLowestDifference {
         int [] array1 = {30,12,5,9,2,20,33,1};
         int [] array2 = {18,25,41,47,17,36,14,19};
 
-        int m = array1.length;
-        int n = array2.length;
+        //int m = array1.length;
+        //int n = array2.length;
 
-        System.out.println(difference(array1,array2,m,n));
+        System.out.println(difference(array1,array2));
 
-        }
+    }
 
-        static int difference(int a1[], int a2[], int m, int n)
+        static int difference(int a1[], int a2[])
         {
             Arrays.sort(a1);
             Arrays.sort(a2);
@@ -27,7 +27,7 @@ public class FindLowestDifference {
 
             int c = Integer.MAX_VALUE;
 
-            while (a < m && b < n)
+            while (a < a1.length && b < a2.length)
             {
                 if (Math.abs(a1[a] - a2[b]) < c)
                     c = Math.abs(a1[a] - a2[b]);

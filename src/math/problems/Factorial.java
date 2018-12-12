@@ -21,11 +21,9 @@ public class Factorial {
         System.out.println("Factorial by Recursion of 5! = " + Recursion(5));//Recursion
     }
     static int Recursion (int a){
-        int c;
         if (a == 1){
             return 1;
-        } else { c = a*Recursion(a-1);
-            return c;
+        } else {return a*Recursion(a-1);
         }
     }
 }

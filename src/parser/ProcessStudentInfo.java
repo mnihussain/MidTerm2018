@@ -84,7 +84,7 @@ public class ProcessStudentInfo {
 
 
 			//Store Qtp data into Qtp table in Database
-			connectToMongoDB.insertIntoMongoDB(seleniumStudents,"qtp");
+			connectToMongoDB.insertIntoMongoDB(qtpStudents,"qtp");
 			//connectToSqlDB.insertDataFromArrayListToMySql(seleniumStudents, "qtp","studentList");
 
 			//Store Selenium data into Selenium table in Database
