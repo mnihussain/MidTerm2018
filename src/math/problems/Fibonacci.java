@@ -16,11 +16,11 @@ public class Fibonacci {
              counter++;
          }
         System.out.println("Total Fibonacci numbers are = " + counter);
-       /*  Fibonacci f = new Fibonacci();
+         Fibonacci f = new Fibonacci();
         System.out.println(f.fib(3));
         for (int i = 0; i<10;i++){
             System.out.println(f.fib(i));
-        }*/
+        }
     }
 
     public int fib(int num){
